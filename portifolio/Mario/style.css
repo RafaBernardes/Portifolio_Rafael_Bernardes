@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.gameBoard {
+     width: 100%;  /*USADO PARA OCUPAR 100% DA TELA*/
+     height: 100vh;  /* "vh" USADO PARA TERMOS 100% DA ALTURA VIZUALIZAÇÃO DA TELA VIEWPORT-HEIGHT */
+    border-bottom: 16px solid rgb(28,119,10);
+    margin: 0 auto;
+    position: relative;   /*é usado quando queremos alterar a posição de um elemento tendo como referência a posição inicial dele. Ao aplicarmos essa propriedade em um elemento, ele não muda de posição, pois já vai  estar posicionado em sua posição de referência.*/
+    overflow: hidden;  /* "overflow:hidden" - BLOQUEIA E OCULTA A BARRA DE ROLAGEM DO SCROOL DO MOUSE NA TELA.*/
+    background:linear-gradient(#46beee, #e0f6ff ); /*GRADIENTE*/
+}
+
+.pipe {
+    position: absolute;  /*indica que o elemento ficará em uma posição fixa em relação à página.*/
+    bottom: 0;
+    width: 80px;
+    height: 112px;
+    animation: pipeAnimation 1s infinite linear;
+}
+
+.mario {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+}
+
+.jump {
+    animation: jumpAnimation 500ms infinite ease-out;  /*"500ms" SÃO 500MILISEGUNDOS || "ease-out" - É UMA SUAVIZAÇÃO QUANDO ESTA FINALIZANDO A ANIMAÇÃO DEIXANDO UM POUCO MAIS LENTA */
+}
+
+.clouds {
+    position: absolute;
+    width: 550px;
+    animation: cloudsAnimation 20s infinite linear;
+}
+
+
+
+
+/*_________________________CONTRUIR ANIMAÇÃO_________________________*/
+@keyframes pipeAnimation {
+  from {
+    right: -80px;
+  } to{
+    right: 100%;
+  }
+}
+
+@keyframes jumpAnimation{
+    0% {
+        bottom: 0;
+    }
+    40% {
+        bottom: 180px;
+    }
+    50% {
+        bottom: 180px;
+    }
+    60% {
+        bottom: 180px
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes cloudsAnimation {
+    from {
+        right: -550px;
+    } to{
+        right: 100%;
+    }
+}
+

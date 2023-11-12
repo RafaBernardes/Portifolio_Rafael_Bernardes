@@ -1,0 +1,133 @@
+/*CORPO DA APLICAÇÃO*/
+html{
+    scroll-behavior: smooth;   /*SUAVIZAÇÃO DO SCROLL*/
+}
+body{                            /* COMENTARIO */
+/*BACKGROUND*/
+    background-color: grey;
+/*TEXTO*/
+    color:black;
+    text-align: justify;
+/*ALINHAMENTO E TAMANHO*/
+   /* width: 85%;  -  MEDIDAS SÃO rem, px E % // 1 rem EQUIVALE A 16px*/
+    margin: auto;
+}
+
+/*SEÇÕES DOS LIVROS */
+section{
+/*ESPAÇAMENTO DENTRO DA SEÇÃO*/
+    padding-left: 256px;
+    padding-right: 256px;           /*PODE SER USADO UMA LINHA SO DE CÓDIGO*/
+    padding-bottom: 64px;   /*FORMATO SHORT-HAND - padding: 64 256 64 30; CADA VALOR EM SENTIDO HORÁRIO*/
+    padding-top: 64px;
+/*padding: 64 256 64 30;*/                                
+/*padding: 64px 256px; PRIMEIRA MEDIDA EM CIMA E EM BAIXO E SEGUNDA MEDIDA ESQUERDA E DIREITA*/
+}
+
+/*TABELA*/
+table{
+    width: 100%;
+}
+
+td{
+   background-color: aquamarine;
+   border-width: 3px;       /*LARGURA DA BORDA*/ 
+   border-style: solid;     /*TIPO DE BORDA*/           /*SHORT-HAND - border: black solid 1px */
+   border-color: black;   /*COR DA BORDA*/
+   border-radius: 10px;     /*ARREDONDAMENTO DE BORDA*/
+   /*padding-left: 5px;     ESPAÇAMENTO ESQUERDA*/
+   text-align: center;      /*ALINHA O TEXTO NO CENTRO*/
+}
+
+th{               /*PODEMOS USAR td, th{ } PARA APLICAR NAS DUAS TABELAS*/
+    border: black solid 1px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+tr{
+   background-color: lightgreen;
+}
+
+/*TITULO, TEXTO E PARÁGRAFO*/
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
+h3{
+    color: black
+}
+
+/*LINKS*/
+a:link{
+    color: beige      /* LINK NORMAL*/
+}
+
+a:visited{              /* LINK VISISTADO*/
+    color: darkgoldenrod
+}
+
+a:hover{                /* MOUSE SOBRE O LINK*/
+    color: brown
+}
+
+a:active{               /*LINK SELECIONADO*/
+    color: gold
+}
+
+/*IMAGEM*/
+img{
+    width: 300px;
+    display: block;     /*FORMATAÇÃO ESTILO BLOCO*/
+    margin: auto;
+    border-radius: 50px;
+}
+
+/*CLASSES E IDs*/
+.bookTitle{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#sectionHP, #sectionMF, #sectionCN{
+    background-color: aqua;
+}
+
+#header{
+    background-color: rgb(0, 120, 120);
+    color: white;
+    padding: 20px;      /* PADDING COM UMA MEDIDA FICA EM TODOS OS LADOS*/
+    margin-bottom: 0px;
+}
+
+#yourlibrary{ 
+    text-indent: 0px;
+    text-align: center;
+}
+
+#sumary{
+    background-color: darkgreen;
+    color: red;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 0 0 50px 50px;
+    display: flex;           /*DEFINI A VISUALIZAÇÃO DOS ITENS UM DO LADO DO OUTRO*/
+    flex-direction: column;  /*ALINHA ITENS UM EM CIMA DO OUTRO*/
+    align-items: center;     /*ALINHA TODOS OS ITENS*/
+}
+
+.botaotopo { 
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: -50px;
+    text-align: center;
+}
+
+.botaotopo button{
+    border-radius: 4px;
+}
