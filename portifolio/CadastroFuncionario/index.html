@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Cadastro de Funcionários</title>
+</head>
+<body>
+    
+    <div class="formulario">
+        <div class="busca">
+            <button class="botao" onclick="busca()">Busca</button>
+            <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisa..." >
+        </div>
+        <h1 class="cadastro"><u>CADASTRO DE FUNCIONÁRIOS</u></h1>
+    
+        <div class="nome">NOME
+            <form>
+                <input type="text" id="nome" name="NOME"/>
+                <label for="nome"></label>
+            </form>
+        </div>
+        
+        <div class="data">DATA DE NASCIMENTO
+            <form>
+                <input type="date" id="dataNascimento"/>
+            </form>
+        </div>
+
+        <div class="tel">TELEFONE
+            <form>
+                <input type="tel" id="telefone"/>
+            </form>
+        </div>
+
+        <div class="est_civil">ESTADO CIVIL
+            <form>
+                <input type="text" id="estadoCivil"/>
+            </form>
+        </div>
+
+        <div class="sex">SEXO
+            <form>
+                <input type="radio" id="sexM" name="sexo" value="M"/>
+                <label for="sexM">M</label>
+                <input type="radio" id="sexF" name="sexo" value="F"/>
+                <label for="sexF">F</label>
+            </form>
+        </div>
+
+        <div class="end">ENDEREÇO
+            <form>
+                <input type="text" id="endereco"/>
+            </form>
+        </div>
+
+        <div class="bairro">BAIRRO
+            <form>
+                <input type="text" id="bairro"/>
+            </form>
+        </div>
+    
+        <div class="cid">CIDADE
+            <form>
+                <input type="text" id="cidade"/>
+            </form>
+        </div>
+    
+        <div class="est">
+            <h3>Estado:</h3>
+                <form>
+                    <select id="estado" name="estado">
+                        <option value="select">Selecione</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <!-- Adicionar outras opções de estados caso necessário -->
+                    </select>
+                </form>
+        </div>
+                    
+        <div class="carg">CARGO
+            <form>
+                <input type="text" id="cargo"/>
+            </form>
+        </div>
+
+        <div class="formac">FORMAÇÃO
+            <form>
+                <input type="text" id="formacao"/>
+            </form>
+        </div>
+
+        <div class="email">E-MAIL
+            <form>
+                <input type="email" id="email"/>
+            </form>
+        </div>
+    
+        <div class="enviar">
+            <button onclick="cadastrar()">CADASTRAR</button>
+        </div>
+    </div>
+
+    <div class="lista">
+        <h1><u>Lista de Funcionários</u></h1>
+        <ul id="lista-funcionarios"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

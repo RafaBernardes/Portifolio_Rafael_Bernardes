@@ -1,0 +1,157 @@
+html>body{
+    background-color:#aaaaaa
+}
+
+/* Editado as seções */
+#sobre, #habilidade, #portifolio, #contato {
+    padding: 2rem 0;
+}
+
+/* Hero Section */
+.bgimage {
+    height: 50vh;
+    position: relative;
+    background: url(img/banner.jpg);
+    background-size: cover;
+}
+
+.col-lg-8 p{
+    font-size: 20px;
+}
+
+.col-md-6>ul{
+    font-size: 22px;
+}
+
+.barrainformacao {
+  margin-left: 35%;
+}
+
+.heroTitle {
+    font-size: 4.5rem;  /* (72px) */
+}
+
+.heroDesc {
+    font-size: 2rem; /*(32px)*/
+}
+
+.heroText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.aboutImage {
+    width: 100%;
+}
+
+.servicesText.card {
+    height: 280px;
+    padding: 0 2rem;
+}
+
+.servicesIcon {
+    height: 36px;
+    text-align: center;
+    width: 100%
+}
+
+.cardTitle {
+    text-align: center;
+}
+
+.cardText1 {
+    font-size: 23px;
+}
+
+.cardBodycontato{
+    text-align: center;
+}
+
+.cardBodycontato i{
+    margin-top: 10px;
+    margin-left: -1px;
+}
+
+.webempresap {
+  margin-top: 27px;
+}
+
+.card:hover .servicesIcon {
+    color: black;
+}
+.servicesText:hover {
+    border: 1px solid black;
+}
+
+/* Estilização do cabeçalho */
+
+.navbar {
+  background-color: #403f41;
+}
+
+.navbar a{
+    color: white;
+    padding: 0,5rem;
+}
+
+.navbar a:hover{
+    background-color: #ddd;
+    color: black;
+    border-radius: 4px;
+}
+
+.contactIcon {
+    font-size: 2.5rem;
+    color: #403f41;
+    margin-left: 45px;
+}
+
+
+footer{
+    background-color: #403f41;
+}
+
+.footerIcon {
+    font-size: 2rem;
+    color: white;
+    margin-left: 45px;
+}
+
+.footerIcon:hover{
+    color: rgb(102, 146, 241);
+}
+
+.footerDev{
+    background-color: #7c7c7c;
+    color: white;
+    font-size: 25px;
+}
+
+.direitos{
+    color: black;
+    font-size: 13px;
+    margin-top: -15px;
+}
+
+
+/*! Efeito Glassmorphismo */
+
+.glass{
+    position: absolute;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /*? From https://css.glass */
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+}
+
+
